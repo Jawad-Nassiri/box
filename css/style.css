@@ -1,0 +1,268 @@
+html{
+    font-size: 20px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Roboto;
+}
+/* header start  */
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem 0 2rem;
+}
+.header .logo p{
+    user-select: none;
+}
+.header .header-right .account{
+    width: 25rem;
+    height: 4rem;
+    border: 2px solid #8c8c8c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background-color: #e5e5e5;
+}
+.header .header-right .account .my-account,
+.header .header-right .account .shop{
+    display: flex;
+    align-items: center;
+}
+.header .header-right .account .my-account a,
+.header .header-right .account .shop a{
+    color: #000;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+/* hover effect for all the links  */
+.header .header-right .account .my-account a:hover,
+.header .header-right .account .shop a:hover,
+.header .header-right .nav .list-item .item a:hover{
+    color: #ea9f05;
+    transition: 0.3s ease;
+}
+.header .header-right .nav .list-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.2rem 0;
+}
+.header .header-right .nav .list-item .item a{
+    color: #000;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem 0 1.5rem;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+/* header finished  */
+
+/* main start  */
+
+.main{
+    height: 31.5rem;
+    background-color: #1c1c1c;
+    padding-top: 1rem
+}
+.main img{
+    width: 100%;
+    height: 100%;
+}
+/* main finished  */
+
+/* features start  */
+.feature-container{
+    margin: 2rem 0 4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.feature-container .feature{
+    margin: 2rem 9rem;
+}
+.feature-container .feature .feature-img{
+    width: 20rem;
+    height: 20rem;
+    box-shadow: 0 0 10px 10px #ccc;
+    text-align: center;
+    position: relative;
+}
+.feature-container .feature .feature-img img{
+    width: 100%;
+    height: 90%;
+}
+.feature-container .feature .feature-img .promotion{
+    width: 5rem;
+    height: 3rem;
+    background-color: #3c3c3c;
+    color: #ea9f05;
+    line-height: 3rem;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 0.5rem;
+    right: -1.5rem
+}
+.feature-container .feature .price-des{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+.feature-container .feature .price-des button{
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    padding: 0.4rem 2rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.feature-container .feature .price-des .price{
+    box-shadow: 0 0 4px 0px #000;
+    padding: 0rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+}
+.feature-container .feature .price-des .price p{
+    text-decoration: line-through;
+    margin-right: 1rem
+}
+.feature-container .feature .price-des .price span{
+    color: #ea9f05;
+    font-size: 1.5rem
+}
+/* features finished  */
+
+/* footer start  */
+.footer{
+    width: 100%;
+    height: 25rem;
+    background-color: #373737;
+    color: #fff;
+    padding-top: 1rem;
+}
+.footer .list{
+    height: 1.3rem;
+    background-color: #fff;
+}
+.footer .list .footer-list{
+    width: 60%;
+    height: 2.6rem;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    margin: 0 auto;
+    color: #000;
+    background-color: #f4f4f4;
+}
+.footer .list .footer-list ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .list .footer-list ul li{
+    margin: 0 1.5rem
+}
+.footer .footer-feature{
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+.footer .footer-feature .footer-desc{
+    width: 15%;
+    margin: 0 2rem;
+    text-align: center;
+}
+.footer .footer-feature .footer-desc p{
+    margin-top: 0.5rem
+}
+.footer .icons{
+    text-align: center;
+    margin: 3rem 0;
+}
+.footer .icons img{
+    margin: 0 2rem;
+}
+.footer .icons p{
+    margin-top: 1rem
+}
+
+/* footer finished  */
+
+
+@media (max-width: 1052px){
+    .main {
+        background-color: #ea9f05;
+    }
+}
+
+
+@media (max-width: 760px){
+    .header {
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0.5rem 0.3rem 0 0.3rem;
+    }
+    .header .logo,
+    .header .header-right{
+        width: 50%;
+        margin: 0 0.3rem;
+    }
+    .header .logo img{
+        width: 100%;
+    }
+    .header .header-right .account {
+        width: 100%;
+        height: 6rem;
+        display: block;
+    }
+    .header .header-right .nav .list-item {
+        display: block;
+    }
+    .header .header-right .nav .list-item .item a {
+        padding: 0;
+        border-right: 0;
+        border-left: 0;
+    }
+    .feature-container {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .footer {
+        width: 100%;
+        height: 100%;
+    }
+    .footer .list .footer-list {
+        width: 100%;
+        border-radius: 0;
+    }
+    .footer .footer-feature {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .footer .footer-feature .footer-desc {
+        width: 50%;
+        margin:  0.5rem;
+    }
+    .footer .icons {
+        margin: 2rem 0 0 0;
+    }
+    .footer .icons p {
+        padding: 1rem 0;
+    }
+}
